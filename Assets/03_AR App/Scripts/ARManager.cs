@@ -27,13 +27,13 @@ namespace ARApp
 
         void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                List<ARRaycastHit> hits = new List<ARRaycastHit>();
+                List<ARRaycastHit> touches = new List<ARRaycastHit>();
 
-                raycastManager.Raycast(Input.mousePosition, hits, UnityEngine.XR.ARSubsystems.TrackableType.Planes);
+                raycastManager.Raycast(Input.GetTouch(0).position, touches, UnityEngine.XR.ARSubsystems.TrackableType.Planes);
 
-                if(hits.Count > 0) Instantiate(myObj, hits[0].pose.position, hits[0].pose.rotation);
+                if(touches.Count > 0) Instantiate(myObj, touches[0].pose.position, touches[0].pose.rotation);
             }
         }
     }

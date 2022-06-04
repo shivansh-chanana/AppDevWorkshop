@@ -838,9 +838,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363006790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8539901, y: -1.743079, z: 9.815609}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 951823716}
   m_Father: {fileID: 0}
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 607f4560f64513e49a652c9c0e622619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myObj: {fileID: 100000, guid: fb240781ff8d048478dbd8b541843897, type: 3}
+  myObj: {fileID: 6660343773674532099, guid: fc750034d78b46a4a9ac48ef67ef4fc9, type: 3}
   raycastManager: {fileID: 1363006791}
   menuBtn: {fileID: 148830667}
 --- !u!4 &1421641814
